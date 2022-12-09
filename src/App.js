@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+// import ProductData from './Component/Product';
+// import ProductData from './Data/Data';
+import { Fragment } from "react";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+// import Product from './Component/Product';
+import Header from "./Component/Header";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Data from "./Data/Data";
+import Cards from "./Component/Card";
+import { useState } from "react";
+import Buttons from "../src/Component/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Container>
+        <Header />
+      </Container>
+    </Fragment>
   );
 }
 
